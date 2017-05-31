@@ -1,0 +1,17 @@
+apply plugin: 'java'
+
+description = "Chaewon Min-- Gradle File"
+version = "1.0"
+
+dependencies {
+	compile fileTree(dir: 'lib', include: ['*.jar'])
+}
+
+jar {
+	manifest {
+		attributes 'Implementation-Title' : 'AntLab',
+					'Implementation-Version' : version,
+					'Main-Class' : 'edu.gatech.oad.antlab.pkg1.AntLabMain',
+					'Class-Path' : '../../lib/resources.jar'
+	}
+}
