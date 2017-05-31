@@ -76,13 +76,13 @@ public class AntLabMain {
 
         //Person3 replace P3 with your name
         //and gburdell3 with your gt id
-        Person3 p3 = new Person3("Chaewon Min);
+        Person3 p3 = new Person3("Chaewon Min");
                 toPrint += p3.toString("cmin8");
 
         //Person4 replace P4 with your name
         //and gburdell4 with your gt id
-        Person4 p4 = new Person4("P4");
-        toPrint += p4.toString("gburdell4");
+        Person4 p4 = new Person4("Chianne Connelly");
+        toPrint += p4.toString("cconnelly7");
 
         //Person5 replace P4 with your name
         //and gburdell5 with your gt id
