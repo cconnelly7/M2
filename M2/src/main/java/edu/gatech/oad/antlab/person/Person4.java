@@ -9,6 +9,7 @@ package edu.gatech.oad.antlab.person;
  *  @version 1.1
  */
 public class Person4 {
+
   /** Holds the persons real name */
   private String name;
     /**
@@ -30,9 +31,19 @@ public class Person4 {
      * @return the modified string
      */
     private String calc(String input) {
-      //Person 4 put your implementation here
-      return null;
+        int count = 0;
+        String out = "";
+        while (count < input.length()) {
+            int anum = (int) input.charAt(count);
+            int anum_new = anum + 1;
+            out = out + ((char) anum_new);
+            count++;
+        }
+        //Person 4 put your implementation here
+        return out;
     }
+
+
     
     /**
      * Return a string rep of this object
@@ -44,6 +55,12 @@ public class Person4 {
      */
     public String toString(String input) {
       return name + calc(input);
+    }
+
+    public static void main(String[] args) {
+        Person4 p4 = new Person4("ConneBush");
+        String test = "abc123";
+        System.out.println(p4.calc(test));
     }
 
 }
